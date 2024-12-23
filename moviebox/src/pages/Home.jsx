@@ -10,8 +10,9 @@ const [searchQuery, setSearchQuery] = useState("");
         { id: 3, title: "The Matrix", release_date: "1999" }
     ];
 
-    const handleSearch = () => {
-
+    const handleSearch = (e) => {
+        e.preventDefault();
+        alert(searchQuery);
     }
 
     return (
@@ -21,7 +22,7 @@ const [searchQuery, setSearchQuery] = useState("");
                 <button type="submit" className="search-button">Search</button>
             </form>
             <div className="movies-grid">
-                {movies.map(movie => <MovieCard movie={movie} key={movie.id} />)}
+                {movies.map(movie =>  <MovieCard movie={movie} key={movie.id} />)}
             </div>
         </div>
     );
