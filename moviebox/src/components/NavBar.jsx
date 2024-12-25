@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "../css/Navbar.css";
 
 function NavBar() {
+    console.log("NavBar is rendered");
     return (
         <nav className="navbar">
             <div className="navbar-brand">
