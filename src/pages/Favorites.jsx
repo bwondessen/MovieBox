@@ -8,7 +8,7 @@ function Favorites() {
 
     return (
         <div className="favorites">
-            <h2>Your Favorite Movies</h2>
+            {favorites.length !== 0 && <h2>Your Favorite Movies</h2>}
             {favorites.length === 0 ? (
                 <div className="favorites-empty">
                     <h2>No favorites yet</h2>
@@ -26,3 +26,5 @@ function Favorites() {
 }
 
 export default Favorites;
+
+
